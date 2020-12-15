@@ -71,12 +71,16 @@ const App = () => {
             <h5>{user.username}</h5>
           </div>
         ) : (
-          <div>
+          <div className="flex flex-col space-y-2">
             <input
+              className="text-gray-800"
+              placeholder="username"
               value={username}
               onChange={({ target: { value } }) => setUsername(value)}
             />
             <input
+              className="text-gray-800"
+              placeholder="password"
               value={password}
               onChange={({ target: { value } }) => setPassword(value)}
               type="password"
